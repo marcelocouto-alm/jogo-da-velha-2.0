@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Jogo da Velha</h1>
+  </header>
+
+  <main class="container">
+    <section class="menu">
+      <div class="players">
+        <div class="player1">
+          <label for="player1">X</label>
+          <input type="text" id="player1" placeholder="Player 1" maxlength="10">
+        </div>
+        <div class="player2">
+          <label for="player2">O</label>
+          <input type="text" id="player2" placeholder="Player 2" maxlength="10">
+        </div>
+      </div>
+      <div class="start">
+        <button class="btn" id="start">Start</button>
+      </div>
+    </section>
+
+    <section class="game">
+      <h2>Vez de: <span id="turnPlayer"></span></h2>
+      <div id="gameBoard">
+        <span class="cursor-pointer" data-region="0.0"></span>
+        <span class="cursor-pointer" data-region="0.1"></span>
+        <span class="cursor-pointer" data-region="0.2"></span>
+        <span class="cursor-pointer" data-region="1.0"></span>
+        <span class="cursor-pointer" data-region="1.1"></span>
+        <span class="cursor-pointer" data-region="1.2"></span>
+        <span class="cursor-pointer" data-region="2.0"></span>
+        <span class="cursor-pointer" data-region="2.1"></span>
+        <span class="cursor-pointer" data-region="2.2"></span>
+      </div>
+    </section>
+  </main>
+  <footer class="flex align-center">
+    <span>MarceloCouto &copy;2023</span>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
